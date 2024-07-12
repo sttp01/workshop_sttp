@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: unbuntu-latest
 
     atep:
       - uses: actions/checkout@v3
