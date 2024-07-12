@@ -1,6 +1,6 @@
 name: Medical_Expenses
 
-on: 
+on:
   push:
     branches: ["main"]
   pull_request:
@@ -15,7 +15,7 @@ jobs:
 
     atep:
       - uses: actions/checkout@v3
-      - name: Set Up Python 3.11
+      - name: Set Up Python 3.12
         uses: actions/checkout@v3
         with:
-          python-version: "3.11"     
+          python-version: "3.12"
