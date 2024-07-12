@@ -1,28 +1,34 @@
 base:
-  project: Insurance
+  project: workshop_sttp
   random_state: 42
   target_col: expenses
 
 data_source:
-  s3_data: ../source_data/med-insurance.csv
+  s3_data: source_data/med-insurance.csv
 
 load_data:
-  raw_data: ../data/raw/insurance.csv
+  raw_data: data/raw/insurance.csv
 
 split_data:
-  train_path: ../data/processed/train_insurance.csv
-  test_path: ../data/processed/test_insurance.csv
+  train_path: data/processed/train_insurance.csv
+  test_path: data/processed/test_insurance.csv
   test_size: 0.1
 
 estimators:
   ElasticNet:
     params:
-      alpha: 0.9
-      l1_ratio: 0.7
+      alpha: 0.7
+      l1_ratio: 0.2
 
-model_dir: models/model_insurance.pkl
+model_dir: models/models.joblib
 
 reports:
   params: reports/params.json
   score: reports/score.json
   
+mlflow_config:
+  artifacts_dir: artifacts
+  experiment_name: ElasticNet_regression
+  run_name: mlops
+  registered_model_name:  ElasticNet_Model
+  remote_server_uri: http://127.0.0.1:5000
