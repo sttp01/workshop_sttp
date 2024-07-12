@@ -1220,10 +1220,24 @@ WARNING:waitress.queue:Task queue depth is 3
 WARNING:waitress.queue:Task queue depth is 2
 WARNING:waitress.queue:Task queue depth is 2
 
+PS C:\Users\User\Desktop\workshop> cd .\.venv\Scripts\
+PS C:\Users\User\Desktop\workshop\.venv\Scripts> .\Activate.ps1
+(.venv) PS C:\Users\User\Desktop\workshop\.venv\Scripts> cd ..
+(.venv) PS C:\Users\User\Desktop\workshop\.venv> cd ..
+
+sonarcube is used for code quality(https://www.sonarsource.com/open-source-editions/sonarqube-community-edition/)
+defactdojo(https://www.defectdojo.org/)
+xiam(firewall)
+
+frontend using django 
 
 
+PS C:\Users\User\Desktop\workshop> django-admin startproject webapp
 
 
+PS C:\Users\User\Desktop\workshop> cd .\webapp\
+PS C:\Users\User\Desktop\workshop\webapp> django-admin startapp firstapp
+PS C:\Users\User\Desktop\workshop\webapp> cd ..
 
 
 

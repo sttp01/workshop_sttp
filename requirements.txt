@@ -6,3 +6,4 @@ joblib
 mlflow
 pycopy-urllib.parse
 django
+psycopg2
