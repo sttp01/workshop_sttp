@@ -32,5 +32,5 @@ jobs:
           docker tag medical varunrevankar123/medical:latest
           docker login -U ${{secrets.DOCKERHUB_USERNAME}} -P ${{secrets.DOCKERHUB_TOKEN}}
           docker push varunrevankar123/medical:latest
-      - env : 
+        env : 
           DOCKER_CLI_ACI : 1
