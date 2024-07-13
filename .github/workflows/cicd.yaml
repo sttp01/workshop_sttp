@@ -29,6 +29,6 @@ jobs:
       - name: Docker Build and Push 
         run : |
           docker build -t medical1 .
-          docker tag medical varunrevankar123/medical:latest
+          docker tag medical varunrevankar123/medical1:latest
           docker login -U ${{secrets.DOCKERHUB_USERNAME}} -P ${{secrets.DOCKERHUB_TOKEN}}
-          docker push varunrevankar123/medical:latest
+          docker push varunrevankar123/medical1:latest
