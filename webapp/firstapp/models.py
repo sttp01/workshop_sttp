@@ -8,5 +8,3 @@ class insurance(models.Model):
     smoker = models.FloatField()
     region = models.FloatField()
     expenses = models.FloatField()
-
-

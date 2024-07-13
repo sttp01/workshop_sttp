@@ -1231,6 +1231,8 @@ xiam(firewall)
 
 2gb ram required for sonarqube
 
+trivy code reports
+
 frontend using django 
 
 
