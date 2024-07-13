@@ -1229,6 +1229,8 @@ sonarcube is used for code quality(https://www.sonarsource.com/open-source-editi
 defactdojo(https://www.defectdojo.org/)
 xiam(firewall)
 
+2gb ram required for sonarqube
+
 frontend using django 
 
 
@@ -1405,3 +1407,5 @@ Id CommandLine
   30 python .\manage.py sqlmigrate firstapp 0001
   31 python .\manage.py migrate
   32 python .\manage.py runserver
+
+
