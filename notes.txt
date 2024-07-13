@@ -1,3 +1,9 @@
+
+https://github.com/sarasconsultancy/gmit-xerxez/blob/main/.github/workflows/cicd.yaml
+
+
+
+
 PS C:\Users\User\Desktop\workshop> python --version
 Python 3.12.2
 PS C:\Users\User\Desktop\workshop> python -m venv .venv
