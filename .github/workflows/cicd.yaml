@@ -30,7 +30,11 @@ jobs:
         run : |
           docker build -t medical .
           docker tag medical varunrevankar123/medical:latest
-          docker login -U ${{secrets.DOCKERHUB_USERNAME}} -P ${{secrets.DOCKERHUB_TOKEN}}
+          docker login -u ${{secrets.DOCKERHUB_USERNAME}} -p ${{secrets.DOCKERHUB_TOKEN}}
           docker push varunrevankar123/medical:latest
         env : 
           DOCKER_CLI_ACI : 1
+
+      # - name : Lint and Flake8
+      #   run : |
+
